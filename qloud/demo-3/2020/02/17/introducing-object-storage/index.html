@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js no-svg">
+
+<!-- Mirrored from iqonic.design/wp-themes/qloud/demo-3/2020/02/17/introducing-object-storage/ by  [XR&CO'2014], Wed, 11 Mar 2020 13:06:55 GMT -->
+
+<head>
+<!-- Required meta tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="../../../../wp-content/themes/qloud/assets/images/favicon.ico" />
+        <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Introducing Object Storage! &#8211; Qloud Demo 3</title>
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Qloud Demo 3 &raquo; Feed" href="../../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Qloud Demo 3 &raquo; Comments Feed" href="../../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Qloud Demo 3 &raquo; Introducing Object Storage! Comments Feed" href="feed/index.html" />
+		<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/iqonic.design\/wp-themes\/qloud\/demo-3\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../../../wp-includes/css/dist/block-library/style.min9dff.css?ver=5.3.2' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='../../../../wp-content/plugins/contact-form-7/includes/css/stylesb62d.css?ver=5.1.6' media='all' />
+<link rel='stylesheet' id='flaticon-css'  href='../../../../wp-content/plugins/iqonic-extensions/assest/css/flaticon8a54.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='tox-progress-css'  href='../../../../wp-content/plugins/iqonic-extensions/assest/css/tox-progress5152.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='timeline-css'  href='../../../../wp-content/plugins/iqonic-extensions/assest/css/timeline5152.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='slick-theme-css'  href='../../../../wp-content/plugins/iqonic-extensions/assest/css/slick-theme5152.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='slick-css'  href='../../../../wp-content/plugins/iqonic-extensions/assest/css/slick5152.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='iqonic-extenstion-css'  href='../../../../wp-content/plugins/iqonic-extensions/assest/css/iqonic-extenstion8a54.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='../../../../wp-content/plugins/revslider/public/assets/css/rs6fe13.css?ver=6.1.8' media='all' />
+<style id='rs-plugin-settings-inline-css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='bootstrap-css'  href='../../../../wp-content/themes/qloud/assets/css/bootstrap.mina352.css?ver=4.1.3' media='all' />
+<link rel='stylesheet' id='ionicons-css'  href='../../../../wp-content/themes/qloud/assets/css/ionicons.min001e.css?ver=2.0.0' media='all' />
+<link rel='stylesheet' id='typicon-css'  href='../../../../wp-content/themes/qloud/assets/css/typicon.min001e.css?ver=2.0.0' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='../../../../wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min1849.css?ver=4.7.0' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='../../../../wp-content/themes/qloud/assets/css/magnific-popup49eb.css?ver=3.5.2' media='all' />
+<link rel='stylesheet' id='owl-carousel-css'  href='../../../../wp-content/themes/qloud/assets/css/owl.carousel.min531b.css?ver=2.3.4' media='all' />
+<link rel='stylesheet' id='wow-css'  href='../../../../wp-content/themes/qloud/assets/css/wow3088.css?ver=3.7.0' media='all' />
+<link rel='stylesheet' id='qloud-style-css'  href='../../../../wp-content/themes/qloud/assets/css/qloud-style5152.css?ver=1.0' media='all' />
+<style id='qloud-style-inline-css'>
+
+            #loading {
+                background:#ffffff !important;
+            }
+
+            header.menu-sticky {
+                background:#f2f5fe !important;
+                position:fixed;
+            }
+             @media(max-width:992px) {
+                header {
+                background:#f2f5fe !important;
+            }
+            }
+
+                 header .main-header .navbar ul li a ,header .main-header .navbar ul li i  { color:#142149; }
+                 
+                
+                 
+
+             header .main-header .navbar ul  li:hover a,header .main-header .navbar ul  li:hover i, header .main-header .navbar ul li a:hover, header .main-header .navbar ul li.current-menu-item a, header .main-header .navbar ul li.current-menu-parent a,header .main-header .navbar ul li.current-menu-parent  i ,header .main-header .navbar ul li.current-menu-item i{ color:#007bfc; }
+             
+               header .main-header .navbar ul li .sub-menu li a:hover, header .main-header .navbar ul li .sub-menu li.current-menu-item a, header .main-header .navbar ul li .sub-menu li:hover>a, header .main-header .navbar ul li .sub-menu li .sub-menu li.menu-item:hover a, header .main-header .navbar ul li .sub-menu li.current-menu-parent a, header .main-header .navbar ul li .sub-menu li.current-menu-parent .sub-menu li.current-menu-item a{
+                background:#007bfc;
+                color:#ffffff;
+               }
+               @media(max-width:992px) {
+               header .main-header .navbar ul li .sub-menu li a:hover, header .main-header .navbar ul li .sub-menu li.current-menu-item a, header .main-header .navbar ul li .sub-menu li:hover>a, header .main-header .navbar ul li .sub-menu li .sub-menu li.menu-item:hover a, header .main-header .navbar ul li .sub-menu li.current-menu-parent a, header .main-header .navbar ul li .sub-menu li.current-menu-parent .sub-menu li.current-menu-item a, header .main-header .navbar ul li .sub-menu li.current-menu-parent .sub-menu li.current-menu-item .sub-menu li.menu-item.current-menu-item a{
+                    color: #ffffff !important;
+                    background: #007bfc !important;
+                }
+
+                header .navbar ul li a,header .main-header .navbar ul li .sub-menu li.current-menu-parent .sub-menu li a ,header .main-header .navbar ul li.current-menu-item .sub-menu li a,header .navbar ul li.current-menu-ancestor .sub-menu li a,header .main-header .navbar ul li:hover .sub-menu li a,header .main-header .navbar ul li:hover .sub-menu li:hover  .sub-menu li a,header .main-header .navbar ul li .sub-menu li.current-menu-parent .sub-menu li.current-menu-item .sub-menu li.menu-item a{
+                         background: #ffffff;
+                         color: #142149 ;
+                    }
+                
+        header.menu-sticky .navbar ul li.current-menu-ancestor i, header .navbar ul li .sub-menu li:hover, header .navbar ul li a:hover, header .navbar ul li.current-menu-item a, header .navbar ul li.current-menu-parent a, header .navbar ul li.current-menu-parent i, header .navbar ul li.current-menu-ancestor a, header .navbar ul li.current-menu-parent i, header .navbar ul li.current-menu-ancestor i ,header .navbar ul li .sub-menu li.current_page_item  a,header .main-header .navbar ul li:hover a, header .main-header .navbar ul li:hover i, header .main-header .navbar ul li a:hover, header .main-header .navbar ul li.current-menu-item a, header .main-header .navbar ul li.current-menu-parent a, header .main-header .navbar ul li.current-menu-parent i, header .main-header .navbar ul li.current-menu-item i{
+                        color:#ffffff ;
+                    }
+           
+                   
+
+                }
+
+
+               
+                
+                
+
+                 header .main-header .navbar ul li:hover .sub-menu li a,header .main-header .navbar ul li .sub-menu li  i{ color:#142149; }
+                 
+                 header .main-header .navbar ul li .sub-menu li a:hover, header .main-header .navbar ul li .sub-menu li.current-menu-item a, header .main-header .navbar ul li .sub-menu li:hover>a, header .main-header .navbar ul li .sub-menu li .sub-menu li.menu-item:hover a, header .main-header .navbar ul li .sub-menu li.current-menu-parent a, header .main-header .navbar ul li .sub-menu li.current-menu-parent .sub-menu li.current-menu-item a ,header .main-header .navbar ul li .sub-menu li:hover > i, header .main-header .navbar ul li .sub-menu li.current-menu-ancestor i{color:#ffffff;}
+    
+
+                 
+
+            header .sub-main ul li a.iq-button.login {
+                background:  !important;
+            }
+            header .sub-main ul li a.iq-button.login:hover {
+                background:  !important;
+            }
+            header .sub-main ul li a.iq-button.login {
+                color:  !important;
+            }
+            header .sub-main ul li a.iq-button.login:hover {
+                color: #ffffff !important;
+            }
+            header .sub-main ul li a.iq-button.login {
+                border-color:  !important;
+            }
+            header .sub-main ul li a.iq-button.login:hover {
+                border-color:  !important;
+            }
+
+            header .sub-main ul li a.iq-button.signup {
+                background:  !important;
+            }
+            header .sub-main ul li a.iq-button.signup:hover {
+                background:  !important;
+            }
+            header .sub-main ul li a.iq-button.signup {
+                color: #ffffff !important;
+            }
+            header .sub-main ul li a.iq-button.signup:hover {
+                color: #007bfc !important;
+            }
+            header .sub-main ul li a.iq-button.signup {
+                border-color:  !important;
+            }
+            header .sub-main ul li a.iq-button.login:hover {
+                border-color:  !important;
+            }
+
+            footer .footer-topbar {
+                background : #0d1e67 !important;
+            }
+
+            .iq-breadcrumb-one h2{
+                color: #142149 !important;
+            }
+
+                .iq-bg-over {
+                    background : #f2f5fe !important;
+                }
+
+            .iq-breadcrumb-one ol li a, .iq-breadcrumb-one .breadcrumb-item.active, .iq-breadcrumb-one .breadcrumb-item + .breadcrumb-item::before {
+                color : #142149 !important;
+            }
+
+            .iq-breadcrumb-one ol li a:hover, .iq-breadcrumb-one .breadcrumb-item.active {
+                color : #142149 !important;
+            }
+
+         body.boxed_layout #page, .container ,  body.boxed_layout header.menu-sticky ,body.boxed_layout .elementor-section.elementor-section-boxed>.elementor-container ,  body.full_width_layout  .elementor-section.elementor-section-boxed>.elementor-container {
+            max-width: 1200px !important;
+         }
+         body.boxed_layout .elementor-section.elementor-section-full_width ,body.boxed_layout section.elementor-section.elementor-section-boxed{
+            width:100% !important;
+            left:0 !important;
+            right: auto !important;
+         }
+         body.boxed_layout header.menu-sticky .main-header
+         {
+            width: 1200px !important;
+         }
+         body.boxed_layout .container ,body.boxed_layout .elementor-section.elementor-section-full_width>.elementor-container .elementor-container ,body.boxed_layout .elementor-section.elementor-section-boxed>.elementor-container .elementor-container 
+         {
+            padding:0;
+         }
+         body.boxed_layout .elementor-section.elementor-section-boxed>.elementor-container, body.boxed_layout .elementor-section.elementor-section-full_width>.elementor-container, body.boxed_layout header .container, body.boxed_layout footer .container
+         {
+            padding:0 15px;
+         }
+
+        @media (max-width: 1199px) and (min-width: 992px)
+        {
+
+                body.boxed_layout #page, .container ,  body.boxed_layout header.menu-sticky ,body.boxed_layout .elementor-section.elementor-section-boxed>.elementor-container ,  body.full_width_layout  .elementor-section.elementor-section-boxed>.elementor-container{
+                    max-width: 960px !important;
+                }
+        }
+
+        @media (max-width: 991px)
+        {
+                 body.boxed_layout #page, .container ,  body.boxed_layout header.menu-sticky ,body.boxed_layout .elementor-section.elementor-section-boxed>.elementor-container ,  body.full_width_layout  .elementor-section.elementor-section-boxed>.elementor-container
+                {
+                    max-width: 720px !important;
+                }
+                body.boxed_layout #page 
+                {
+                    max-width: 90% !important;
+                    max-width: calc(100% - 60px) !important;
+                }
+        }
+
+        @media (max-width: 767px)
+        {
+                   body.boxed_layout #page, .container ,  body.boxed_layout header.menu-sticky ,body.boxed_layout .elementor-section.elementor-section-boxed>.elementor-container ,  body.full_width_layout  .elementor-section.elementor-section-boxed>.elementor-container
+                {
+                    max-width: 100% !important;
+
+                } 
+                body.boxed_layout .elementor-section.elementor-section-boxed>.elementor-container, body.boxed_layout .elementor-section.elementor-section-full_width>.elementor-container 
+                {
+                    padding: 0 15px;
+                }
+ 
+                body.boxed_layout #page
+                {
+                    max-width: 90% !important;
+                    max-width: calc(100% - 30px) !important;
+                }
+
+
+        }
+</style>
+<link rel='stylesheet' id='qloud-responsive-css'  href='../../../../wp-content/themes/qloud/assets/css/qloud-responsive5152.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='elementor-icons-css'  href='../../../../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.mindeba.css?ver=5.5.0' media='all' />
+<link rel='stylesheet' id='elementor-animations-css'  href='../../../../wp-content/plugins/elementor/assets/lib/animations/animations.min42e1.css?ver=2.8.5' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='../../../../wp-content/plugins/elementor/assets/css/frontend.min42e1.css?ver=2.8.5' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css'  href='../../../../wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min42e1.css?ver=2.8.5' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='../../../../wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min42e1.css?ver=2.8.5' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='../../../../wp-content/uploads/sites/3/elementor/css/globala54c.css?ver=1582791958' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.3.2' media='all' />
+<script src='../../../../wp-includes/js/jquery/jquery4a5f.js?ver=1.12.4-wp'></script>
+<script src='../../../../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script src='../../../../wp-content/plugins/revslider/public/assets/js/revolution.tools.minf049.js?ver=6.0'></script>
+<script src='../../../../wp-content/plugins/revslider/public/assets/js/rs6.minfe13.js?ver=6.1.8'></script>
+<!--[if lt IE 9]>
+<script src='https://iqonic.design/wp-themes/qloud/demo-3/wp-content/themes/qloud/assets/js/html5.js?ver=3.7.3'></script>
+<![endif]-->
+<script src='../../../../wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min42e1.js?ver=2.8.5'></script>
+<link rel='https://api.w.org/' href='../../../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Content Marketing' href='../content-marketing/index.html' />
+<link rel='next' title='CCPA Compliance Update' href='../ccpa-compliance-update/index.html' />
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../../../../indexba1b.html?p=214' />
+<link rel="alternate" type="application/json+oembed" href="../../../../wp-json/oembed/1.0/embed8022.json?url=https%3A%2F%2Fiqonic.design%2Fwp-themes%2Fqloud%2Fdemo-3%2F2020%2F02%2F17%2Fintroducing-object-storage%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../../../../wp-json/oembed/1.0/embed7a05?url=https%3A%2F%2Fiqonic.design%2Fwp-themes%2Fqloud%2Fdemo-3%2F2020%2F02%2F17%2Fintroducing-object-storage%2F&amp;format=xml" />
+<link rel="pingback" href="../../../../xmlrpc.php">
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by Slider Revolution 6.1.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script>function setREVStartSize(e){			
+			try {								
+				var pw = document.getElementById(e.c).parentNode.offsetWidth,
+					newh;
+				pw = pw===0 || isNaN(pw) ? window.innerWidth : pw;
+				e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+				e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+				e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+				e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+				e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+				e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+				e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+				if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+					newh = Math.max(e.mh,window.innerHeight);				
+				else{					
+					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+					for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+					e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+					for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+										
+					var nl = new Array(e.rl.length),
+						ix = 0,						
+						sl;					
+					e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+					e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+					e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+					e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+					for (var i in e.rl) nl[i] = e.rl[i]<window.innerWidth ? 0 : e.rl[i];
+					sl = nl[0];									
+					for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+					var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+
+					newh =  (e.type==="carousel" && e.justify==="true" ? e.gh[ix] : (e.gh[ix] * m)) + (e.tabh + e.thumbh);
+				}			
+				
+				if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+				document.getElementById(e.c).height = newh;
+				window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+			} catch(e){
+				console.log("Failure at Presize of Slider:" + e)
+			}					   
+		  };</script>
+</head>
+
+<body data-spy="scroll" data-offset="80" class="post-template-default single single-post postid-214 single-format-standard has-header-image has-sidebar colors-light elementor-default elementor-page elementor-page-214">
+    <!-- loading -->
+  <div id="loading">
+    <div id="loading-center">
+
+                <div class="load-img" >
+          <img src="../../../../wp-content/uploads/sites/3/2020/02/loader-1.gif" alt="loader">
+          </div>
+            </div>
+  </div>
+ <!-- loading End -->
+ 
+  
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content"></a>
+  
+    
+  
+    <header class="header1  has-sticky header_default" id="main-header">  
+     
+      <div class="container main-header">
+       
+        <div class="row no-gutters">        
+          <div class="col-sm-12">
+            <div class="logo_block">
+                <a class="navbar-brand" href="../../../../index.html">
+                                    <img class="img-fluid logo" src="../../../../wp-content/uploads/sites/3/2020/02/LOGO-1.png" alt="qloud"> 
+                                     <img class="img-fluid  logo-sticky" src="../../../../wp-content/uploads/sites/3/2020/02/LOGO-1.png" alt="qloud"> 
+                              </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light menu">
+            
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="ion-navicon"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                											<div id="iq-menu-container" class="menu-display-menu-container"><ul id="top-menu" class="navbar-nav"><li id="menu-item-1380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1380"><a href="#">Home</a>
+<ul class="sub-menu">
+	<li id="menu-item-1404" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1404"><a href="../../../../../index.html">Home 1</a></li>
+	<li id="menu-item-1405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1405"><a href="../../../../../demo-2/index.html">Home 2</a></li>
+	<li id="menu-item-1406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1406"><a href="../../../../index.html">Home 3</a></li>
+	<li id="menu-item-1458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1458"><a href="../../../../../demo-2/home-4/index.html">Home 4</a></li>
+	<li id="menu-item-1459" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1459"><a href="../../../../../demo-2/cloud-analytics/index.html">Home 5</a></li>
+</ul>
+</li>
+<li id="menu-item-1384" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1384"><a href="#">Pages</a>
+<ul class="sub-menu">
+	<li id="menu-item-1385" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1385"><a href="#">About Us</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1386"><a href="../../../../about-us-1/index.html">About Us 1</a></li>
+		<li id="menu-item-1387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1387"><a href="../../../../about-us-2/index.html">About Us 2</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1388" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1388"><a href="#">Service</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1389"><a href="../../../../service-1/index.html">Service 1</a></li>
+		<li id="menu-item-1390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1390"><a href="../../../../service-2/index.html">Service 2</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1391"><a href="../../../../our-team/index.html">Our Team</a></li>
+	<li id="menu-item-1392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1392"><a href="../../../../pricing-plan/index.html">Pricing Plan</a></li>
+	<li id="menu-item-1393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1393"><a href="../../../../clients/index.html">Clients</a></li>
+	<li id="menu-item-1394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1394"><a href="../../../../faq/index.html">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-1395" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1395"><a href="#">Blog</a>
+<ul class="sub-menu">
+	<li id="menu-item-1396" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1396"><a href="../../../../blog/index.html">Blog</a></li>
+	<li id="menu-item-1397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1397"><a href="../../../../two-column-blog/index.html">Two Column Blog</a></li>
+	<li id="menu-item-1398" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1398"><a href="../../../../three-column-blog/index.html">Three Column Blog</a></li>
+	<li id="menu-item-1399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1399"><a href="../../../../right-column-blog/index.html">Right Column Blog</a></li>
+</ul>
+</li>
+<li id="menu-item-1400" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1400"><a href="#">Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-1401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1401"><a href="../../../../contact-us-1/index.html">Contact Us 1</a></li>
+	<li id="menu-item-1402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1402"><a href="../../../../contact-us-2/index.html">Contact Us 2</a></li>
+	<li id="menu-item-1403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1403"><a href="../../../../contact-us-3/index.html">Contact Us 3</a></li>
+</ul>
+</li>
+</ul></div>								              </div>									
+              <div class="sub-main">
+                <ul >
+                                  
+                                       
+                    <li class="d-inline"><a href="#" class="login iq-button iq-btn-outline iq-btn-round" target="_blank">Login</a></li>
+                  
+                  
+                                   
+                   
+
+                                         <li class="d-inline"><a href="#" class="signup iq-button default iq-btn-round" target="_blank">Sign Up</a></li>
+                                      
+                                  </ul>
+              </div>
+            </nav>         
+          </div>
+        </div>
+      </div>
+</header>
+<div class="iq-height"></div>	<div class="text-left iq-breadcrumb-one 
+		iq-bg-over black		"
+	
+		>
+								<div class="container">
+										<div class="row align-items-center">
+						<div class="col-sm-12">
+							<nav aria-label="breadcrumb" class="text-center iq-breadcrumb-two">
+																<h2 class="title">
+									Introducing Object Storage!								</h2>
+																								<ol class="breadcrumb main-bg">
+									<li class="breadcrumb-item"><a href="../../../../index.html"><i class="fa fa-home mr-2"></i>Home</a></li> <li class="breadcrumb-item"><a href="../../../../category/marketing/index.html">Marketing</a>  </li><li class="breadcrumb-item active">Introducing Object Storage!</li>								</ol>
+															</nav>
+						</div>
+					</div>
+									</div>
+			</div>
+			
+ 
+	<div class="site-content-contain">
+		<div id="content" class="site-content"><div id="primary" class="content-area">
+	<main id="main" class="site-main">
+		<div class="container">
+			<div class="row">
+									<div class="col-lg-8 col-sm-12">
+								<article id="post-214" class="post-214 post type-post status-publish format-standard has-post-thumbnail hentry category-marketing tag-seo tag-storage">
+	<div class="iq-blog-box">
+				<div class="iq-blog-image clearfix">
+					<img width="1260" height="954" src="../../../../wp-content/uploads/sites/3/2020/02/03-4.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="qloud" srcset="https://iqonic.design/wp-themes/qloud/demo-3/wp-content/uploads/sites/3/2020/02/03-4.png 1260w, https://iqonic.design/wp-themes/qloud/demo-3/wp-content/uploads/sites/3/2020/02/03-4-300x227.png 300w, https://iqonic.design/wp-themes/qloud/demo-3/wp-content/uploads/sites/3/2020/02/03-4-1024x775.png 1024w, https://iqonic.design/wp-themes/qloud/demo-3/wp-content/uploads/sites/3/2020/02/03-4-768x581.png 768w" sizes="100vw" />									                               <ul class="iq-blogtag">
+                         			                                    <li><a href="../../../../category/marketing/index.html">Marketing</a></li>
+                                                                       </ul>
+                        		
+				</div>
+					<div class="iq-blog-detail">
+						<div class="iq-blog-meta">
+							<ul class="iq-postdate">
+																<li class="list-inline-item">	
+									<i class="fa fa-calendar mr-2"></i>
+										<span class="screen-reader-text">Posted on</span> <a href="index.html" rel="bookmark"><time class="entry-date published updated" datetime="2020-02-17T06:42:55+00:00">February 17, 2020</time></a>	
+								</li>
+							</ul>
+							
+						</div>
+										<div class="blog-content">
+						<div data-elementor-type="wp-post" data-elementor-id="214" class="elementor elementor-214" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="elementor-element elementor-element-24ee7b08 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="24ee7b08" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="elementor-element elementor-element-64f7b06a elementor-column elementor-col-100 elementor-top-column" data-id="64f7b06a" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-516ca13 elementor-widget elementor-widget-text-editor" data-id="516ca13" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English.</p>
+<blockquote class="wp-block-quote">
+<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for &#8216;lorem ipsum&#8217; will uncover many web sites still in their infancy. – Someone famous in Source Title</p>
+</blockquote>
+<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for &#8216;lorem ipsum&#8217; will uncover many web sites still in their infancy.</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+					</div>
+
+								</div>
+			</div>
+	<div id="comments" class="comments-area">
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://iqonic.design/wp-themes/qloud/demo-3/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='214' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	</div><!-- #comments --></article><!-- #post-## -->				</div>
+						
+				<div class="col-lg-4 col-sm-12  mt-5 mt-lg-0">
+					<aside id="secondary" class="widget-area" aria-label="Blog Sidebar">
+	<div id="search-2" class="widget widget_search"><form method="get" class="search-form" action="https://iqonic.design/wp-themes/qloud/demo-3/">
+	<label for="search-form-5e68e115c8d5d">
+		<span class="screen-reader-text">Search for:</span>
+	</label>
+	<input type="search" id="search-form-5e68e115c8d5d" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+	<button type="submit" class="search-submit"><i class="fa fa-search"></i><span class="screen-reader-text">Search</span></button>
+</form></div>		<div id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+					<a href="../official-terraform-provider/index.html">Official Terraform Provider</a>
+									</li>
+											<li>
+					<a href="../ccpa-compliance-update/index.html">CCPA Compliance Update</a>
+									</li>
+											<li>
+					<a href="index.html" aria-current="page">Introducing Object Storage!</a>
+									</li>
+											<li>
+					<a href="../content-marketing/index.html">Content Marketing</a>
+									</li>
+											<li>
+					<a href="../life-lack-meaning/index.html">Life Lack Meaning</a>
+									</li>
+					</ul>
+		</div><div id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title">Recent Comments</h2><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='https://wordpress.org/' rel='external nofollow ugc' class='url'>A WordPress Commenter</a></span> on <a href="../../15/hello-world-2/index.html#comment-2">Construction industry</a></li></ul></div><div id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
+				<li><a href='../../index.html'>February 2020</a></li>
+		</ul>
+			</div><div id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+				<li class="cat-item cat-item-2"><a href="../../../../category/marketing/index.html">Marketing</a>
+</li>
+		</ul>
+			</div><div id="meta-2" class="widget widget_meta"><h2 class="widget-title">Meta</h2>			<ul>
+						<li><a href="../../../../wp-login.html">Log in</a></li>
+			<li><a href="../../../../feed/index.html">Entries feed</a></li>
+			<li><a href="../../../../comments/feed/index.html">Comments feed</a></li>
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>			</ul>
+			</div></aside><!-- #secondary -->				</div>
+							</div>
+		</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- .container -->
+</div><!-- #content -->
+<!-- Footer start-->
+<footer id="contact" class="   " >
+
+<div class="footer-topbar">
+			<div class="container">
+				<div class="row">
+					
+						
+							<div class="col-lg-12 col-md-12 col-sm-12 ">
+								<div class="widget">			<div class="textwidget"><div class="row ">
+<div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-left">
+<h2 class="text-white">Subscribe for Newsletter</h2>
+</div>
+<div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-right"><script>(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script><!-- Mailchimp for WordPress v4.7.5 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-517" method="post" data-id="517" data-name="Form1" ><div class="mc4wp-form-fields"> 
+		<input type="email" name="EMAIL" placeholder="Your email address" required />
+
+	<input type="submit" value="Subscribe" />
+</div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1583931669" /><input type="hidden" name="_mc4wp_form_id" value="517" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin --></div>
+</div>
+</div>
+		</div>							</div>
+						
+
+
+					
+				</div>
+			</div>
+			
+</div>
+
+        <!-- Address -->
+    <div class="footer-top">
+         <div class="container">
+             <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 ">
+                            <div class="widget">			<div class="textwidget"><p><img class="mb-4 size-full wp-image-976" src="../../../../../wp-content/uploads/2020/02/LOGO-1-1.png" alt="qloud"  width="100"/><br />
+It is a long established fact that a reader will be distracted by the readable content.</p>
+</div>
+		</div>                        </div>
+                                            <div class="col-lg-2 col-md-6 col-sm-6 mt-4 mt-lg-0 mt-md-0 ">
+                            <div class="widget"><h4 class="footer-title">Menu</h4><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-1049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1049"><a href="../../../../home-1/index.html">Home</a></li>
+<li id="menu-item-1051" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1051"><a href="../../../../about-us-1/index.html">About Us</a></li>
+<li id="menu-item-1053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1053"><a href="../../../../service-1/index.html">Service</a></li>
+<li id="menu-item-1050" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1050"><a href="../../../../blog/index.html">Blog</a></li>
+<li id="menu-item-1052" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1052"><a href="../../../../contact-us-1/index.html">Contact Us</a></li>
+</ul></div></div>                        </div>
+                                            <div class="col-lg-2 col-md-6 col-sm-6 mt-lg-0 mt-4">
+                            <div class="widget"><h4 class="footer-title ">About Us</h4><div class="menu-about-menu-container"><ul id="menu-about-menu" class="menu"><li id="menu-item-1059" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1059"><a href="../../../../about-us-2/index.html">About Us</a></li>
+<li id="menu-item-1060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1060"><a href="../../../../service-2/index.html">Service</a></li>
+<li id="menu-item-1061" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1061"><a href="../../../../contact-us-3/index.html">Contact Us</a></li>
+<li id="menu-item-1062" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1062"><a href="../../../../pricing-plan/index.html">Pricing Plan</a></li>
+<li id="menu-item-1063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1063"><a href="../../../../clients/index.html">Clients</a></li>
+</ul></div></div>                        </div>
+                                            <div class="col-lg-2 col-md-6 col-sm-6 mt-lg-0 mt-4">
+                            <div class="widget"><h4 class="footer-title ">Useful links</h4><div class="menu-link-menu-container"><ul id="menu-link-menu" class="menu"><li id="menu-item-1058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1058"><a href="../../../../our-team/index.html">Our Team</a></li>
+<li id="menu-item-1055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1055"><a href="../../../../pricing-plan/index.html">Pricing Plan</a></li>
+<li id="menu-item-1056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1056"><a href="../../../../faq/index.html">FAQ</a></li>
+<li id="menu-item-1057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1057"><a href="../../../../clients/index.html">Clients</a></li>
+<li id="menu-item-1054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1054"><a href="../../../../contact-us-2/index.html">Contact Us</a></li>
+</ul></div></div>                        </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 mt-lg-0 mt-4">
+                            		<div class="widget">
+		<h4 class="footer-title ">Contact Us</h4>			<div class="row">
+				<div class="col-sm-12">
+					<ul class="iq-contact">
+												
+
+						<li>
+							<a><i class="fa fa-home"></i><span>1234 North Avenue Luke Lane, South Bend, IN 360001</span></a>
+						</li>
+																		<li>
+
+						<a href="https://iqonic.design/cdn-cgi/l/email-protection#ef9c9a9f9f809d9baf869e818081868c9b878a828a9cc18c8082"><i class="fa fa-envelope"></i><span><span class="__cf_email__" data-cfemail="bac9cfcacad5c8cefad3cbd4d5d4d3d9ced2dfd7dfc994d9d5d7">[email&#160;protected]</span></span></a>
+						</li>
+																		<li>
+
+						<a href="tel:+0123456789"><i class="fa fa-phone"></i><span >+0123456789</span></a>
+						</li>
+												
+						
+					</ul>
+				</div>
+			</div>
+			</div>
+	                        </div>
+                                 </div>
+         </div>
+    </div>
+        <!-- Address END -->	<div class="copyright-footer">
+		<div class="container">
+			<div class="pt-3 pb-3">
+				<div class="row justify-content-between">
+
+					<div class="col-lg-6 col-md-12 text-lg-left text-md-center text-center">
+													<div class="social-icone">
+																<ul>
+									<li class="d-inline"><a href="#"><i class="fa fa-twitter"></i></a></li><li class="d-inline"><a href="#"><i class="fa fa-instagram"></i></a></li><li class="d-inline"><a href="#"><i class="fa fa-linkedin"></i></a></li>								</ul>
+							</div>	
+						                 </div>
+             
+
+					
+
+					
+					<div class="col-lg-6 col-md-12 text-lg-right text-md-center text-center">
+													<span class="copyright">Copyright 2020 Qloud All Rights Reserved.</span>
+												</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+</footer>
+  <!-- Footer stop-->
+
+    </div><!-- .site-content-contain -->
+</div><!-- #page -->
+	<!-- === back-to-top === -->
+	<div id="back-to-top">
+		<a class="top" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+	</div>
+	<!-- === back-to-top End === -->
+	
+
+	<script data-cfasync="false" src="../../../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+		jQuery( function( $ ) {
+			// Add space for Elementor Menu Anchor link
+			if ( window.elementorFrontend ) {
+				
+				jQuery("#load").fadeOut();
+				jQuery("#loading").delay(0).fadeOut("slow");
+				
+				if(jQuery('header').hasClass('has-sticky'))
+                {         
+                    jQuery(window).on('scroll', function() {
+                        if (jQuery(this).scrollTop() > 10) {
+                            jQuery('header').addClass('menu-sticky');
+                            jQuery('.has-sticky .logo').addClass('logo-display');
+                        } else {
+                            jQuery('header').removeClass('menu-sticky');
+                            jQuery('.has-sticky .logo').removeClass('logo-display');
+                        }
+                    });
+
+				}
+				
+				
+			}
+			
+		} );
+	</script>
+		<script>
+		jQuery( function( $ ) {
+			// Add space for Elementor Menu Anchor link
+			if ( window.elementorFrontend ) {
+				jQuery("#load").fadeOut();
+				jQuery("#loading").delay(0).fadeOut("slow");
+				
+				if(jQuery('header').hasClass('has-sticky'))
+                {         
+                    jQuery(window).on('scroll', function() {
+                        if (jQuery(this).scrollTop() > 10) {
+                            jQuery('header').addClass('menu-sticky');
+                            jQuery('.has-sticky .logo').addClass('logo-display');
+                        } else {
+                            jQuery('header').removeClass('menu-sticky');
+                            jQuery('.has-sticky .logo').removeClass('logo-display');
+                        }
+                    });
+
+				}
+				
+			}
+			
+		} );
+		
+	</script>
+	<script>(function() {function maybePrefixUrlField() {
+	if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if (urlFields) {
+	for (var j=0; j < urlFields.length; j++) {
+		urlFields[j].addEventListener('blur', maybePrefixUrlField);
+	}
+}
+})();</script><script>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/iqonic.design\/wp-themes\/qloud\/demo-3\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script src='../../../../wp-content/plugins/contact-form-7/includes/js/scriptsb62d.js?ver=5.1.6'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/jQuery.countdownTimer.min8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/tox-progress.min8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/timeline8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/timeline.min8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/slick.min8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/amcharts-core8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/amcharts-maps8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/amcharts-worldLow8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/amcharts-animated8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/popper.min8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/custom-map8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/owl.carousel.min8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-content/plugins/iqonic-extensions/assest/js/iqonic-extenstion8a54.js?ver=1.0.0'></script>
+<script src='../../../../wp-includes/js/comment-reply.min9dff.js?ver=5.3.2'></script>
+<script src='../../../../wp-content/themes/qloud/assets/js/bootstrap.mina352.js?ver=4.1.3'></script>
+<script src='../../../../wp-content/themes/qloud/assets/js/countdown5152.js?ver=1.0'></script>
+<script src='../../../../wp-content/themes/qloud/assets/js/appear5152.js?ver=1.0'></script>
+<script src='../../../../wp-content/themes/qloud/assets/js/jquery.countTo5152.js?ver=1.0'></script>
+<script src='../../../../wp-content/themes/qloud/assets/js/magnific-popup/jquery.magnific-popup.minf488.js?ver=1.1.0'></script>
+<script src='../../../../wp-content/themes/qloud/assets/js/isotope.pkgd.min5152.js?ver=1.0'></script>
+<script src='../../../../wp-content/themes/qloud/assets/js/popper.min5152.js?ver=1.0'></script>
+<script src='../../../../wp-content/themes/qloud/assets/js/wow.min6f3e.js?ver=1.3.0'></script>
+<script src='../../../../wp-content/themes/qloud/assets/js/qloud-custom5152.js?ver=1.0'></script>
+<script src='../../../../wp-includes/js/wp-embed.min9dff.js?ver=5.3.2'></script>
+<script src='../../../../wp-content/plugins/mailchimp-for-wp/assets/js/forms.min66f2.js?ver=4.7.5'></script>
+<script src='../../../../wp-content/plugins/elementor/assets/js/frontend-modules.min42e1.js?ver=2.8.5'></script>
+<script src='../../../../wp-includes/js/jquery/ui/position.mine899.js?ver=1.11.4'></script>
+<script src='../../../../wp-content/plugins/elementor/assets/lib/dialog/dialog.minfe9d.js?ver=4.7.3'></script>
+<script src='../../../../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2'></script>
+<script src='../../../../wp-content/plugins/elementor/assets/lib/swiper/swiper.min4f24.js?ver=4.4.6'></script>
+<script>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.8.5","urls":{"assets":"https:\/\/iqonic.design\/wp-themes\/qloud\/demo-3\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes"},"editorPreferences":[]},"post":{"id":214,"title":"Introducing Object Storage!","excerpt":"It is a long established fact that a reader will be distracted by the readable."}};
+</script>
+<script src='../../../../wp-content/plugins/elementor/assets/js/frontend.min42e1.js?ver=2.8.5'></script>
+</body>
+
+<!-- Mirrored from iqonic.design/wp-themes/qloud/demo-3/2020/02/17/introducing-object-storage/ by  [XR&CO'2014], Wed, 11 Mar 2020 13:06:57 GMT -->
+</html>
