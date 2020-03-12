@@ -2,11 +2,10 @@
 
 git clone https://github.com/cloudfly-group/cloudfly-hp.git
 
-Create Virtual Environment – VirtualENV
-  `virtualenv env`
-Activate Virtual Environment
-  `source env/bin/activate`
-Run requirement.txt file to install libraries using Pip3
-  `pip3 install -r requirements.txt`
-Run the server
-  `python3 manage.py runserver`
+### Setup
+1. git clone https://github.com/cloudfly-group/cloudfly-hp.git
+2. Create a virtual environtment - `virtualenv env`
+3. Activate VirtualENV - `source env/bin/activate`
+4. Run requirements.txt - `pip3 install -r requirements.txt`
+5. Run the Application - `python3 manage.py runserver`
+6. Go to - http://localhost:8000/
